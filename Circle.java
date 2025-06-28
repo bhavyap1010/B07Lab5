@@ -4,8 +4,7 @@ public class Circle {
   Point center;
   double radius;
 
-  public Circle(Point center, double radius, String color) {
-    super(color);
+  public Circle(Point center, double radius) {
     this.center = center;
     this.radius = radius;
   }
@@ -15,6 +14,6 @@ public class Circle {
   }
 
   public double computePerimeter() {
-    return Math.PI * radius;
+    return 2 * Math.PI * radius;
   }
 }
